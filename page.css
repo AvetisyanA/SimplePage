@@ -1,0 +1,60 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: purple;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+header,
+footer,
+nav,
+article,
+aside {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+header {
+    height: 80px;
+    background-color:  lightsteelblue;
+}
+
+article {
+    background-color: cadetblue;
+    flex-grow: 1;
+}
+
+nav {
+    width: 150px;
+    background-color: lightcoral;
+}
+
+aside {
+    width: 100px;
+    background-color: lightcoral;
+}
+
+footer {
+    height: 60px;
+    background-color: lightsteelblue;
+}
