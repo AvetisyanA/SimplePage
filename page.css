@@ -1,54 +1,51 @@
-html,
-body,
-header,
-nav,
-main,
-h1,
-footer {
-	margin:0;
-	padding:0;
-    color: #fff;
-    text-align: center;
+html, body {
+  height: 100vh;
 }
-
-html,
-body {
-	height:100vh;
+body, header, main, footer, h1 {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
 }
-
 header {
-	background-color: #aa3522;
-    height: 80px;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  background-color: #12aa44;
+  text-align: center;
 }
-
-footer {
-	background: #aa3522;
-	height: 60px;
-    width: 100%;
-	bottom:0;
-}
-
 main {
-    height: calc(100% - 140Px);
+  height: 100%;
+  text-align: center;
+  background-color: #7788ff;
+}
+
+nav, article, aside {
+	position: absolute;
+  top: 80px;
+  bottom: 60px;
 }
 
 nav {
-    width: 150px;
-    float:left;
-    height: 100%;
-    background-color: #115111;
+  width: 150px;
+  float: left;
+  background-color: #4441aa;
 }
-
 article {
-    height: 100%;
-    float:left;
-    width:calc(100% - 250Px);;
-    background-color: #1155c2;
+  left: 150px;
+  right: 100px;
+  float: left;
+  background-color: #1133dd;
 }
-
 aside {
-    height: 100%;
-    float:right;
-    width:100px;
-    background-color: #115111;
+  right: 0;
+  width: 100px;
+  background-color: #115111;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 60Px;
+  background-color: #23addd;
+  text-align: center;
 }
